@@ -16,6 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        type: 'asset/resource',
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -32,11 +36,7 @@ module.exports = {
             loader: 'css-loader',
           },
         ],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        type: 'asset/resource',
-      },
+      }
     ],
   },
   plugins: [
