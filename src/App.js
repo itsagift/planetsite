@@ -13,6 +13,7 @@ export default function App() {
     <Header setPlanet={setPlanet}/>
     <Planet planet={planet}/>
     <Footer planet={planet}/>
+    <div className="test"></div>
   </div>
   );
 }

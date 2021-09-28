@@ -3,6 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
+.test{
+    background-image: url('/public/assets/planet-earth.svg');
+    display: none;
+}
 body{
     font-family: 'Spartan';
     color: #fff;
