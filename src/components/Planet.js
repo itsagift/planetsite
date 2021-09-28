@@ -30,8 +30,10 @@ export default function Planet({planet}){
                 <MainImage detail={detail} planet={planet}/>
             </div>
             <div className="main__details">
+                <div className="details__text">
                 <h2 className="detail__title">{planet.name}</h2>
                 <div className="detail__desc">{planet[detail].content}</div>
+                </div>
                 <div className="details__input">
                     
                     <input className="detail__input" type="radio" id="overview"

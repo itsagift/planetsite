@@ -12,10 +12,7 @@ body{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height:85px;
-    padding: 0 30px;
-    border-bottom:1px solid rgba(255, 255, 255, 0.2)
+    border-bottom:1px solid rgba(255, 255, 255, 0.2);
 }
 .header__title{
     font-family: 'Antonio';
@@ -25,7 +22,6 @@ header{
     line-height: 100%;
 }
 .header__links{
-    margin-left: auto;
     list-style: none;
     display: flex;
     font-size: 11px;
@@ -37,38 +33,18 @@ header{
 .header__link{
     margin: 0 15px;
 }
+
 .header__link:hover{
     cursor: pointer;
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) { 
 .main{
-        padding: 0 85px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-.main__image{
-    margin: auto;
+    padding: 0 85px;
+    display:flex;
 }
 .main__details{
-    margin-left: auto;
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    min-width: 350px;
-}
-.detail__title{
-    font-size: 80px;
-    font-family: 'Antonio';
-    text-transform: uppercase;
-}
-.detail__desc{
-    font-size: 14px;
-    line-height: 25px;
-    margin-top: 20px;
 }
 .details__input{
-    margin-top:10px;
     display: flex;
     flex-direction: column;
 }
@@ -92,6 +68,43 @@ header{
     text-transform: uppercase;
     letter-spacing: 2.5px;
 }
+
+@media screen and (min-width: 1200px) { 
+    header{
+        flex-direction: row;
+        padding: 0 30px;
+        justify-content: space-between;
+        height:85px;
+    }
+    .header__links{
+        margin-left: auto;
+    }
+    .main{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main__image{
+        margin: auto;
+    }
+    .main__details{
+    margin-left: auto;
+    flex-direction: column;
+    width: 30%;
+    min-width: 350px;
+    }
+    .detail__title{
+    font-size: 80px;
+    font-family: 'Antonio';
+    text-transform: uppercase;
+}
+    .detail__desc{
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+    }
+    .details__input{
+        margin-top:10px;
+    }
 .label__no{
     margin-right: 25px;
 }
@@ -106,6 +119,31 @@ header{
     width: 160px;
 }
 
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) { 
+    header {
+        flex-direction: column;
+        padding: 40px;
+    }
+    .header__links{
+        margin-top: 40px;
+    }
+    .main{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main__image{
+        margin: 100px auto;
+    }
+    .main__details{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .details__text{
+        width:40%;
+    }
 }
 footer{
     padding: 0 85px;
