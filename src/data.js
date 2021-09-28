@@ -1,5 +1,4 @@
-import geologyearth from "/public/assets/geology-earth.svg";
-import geologyjupiter from "/public/assets/geology-jupiter.svg";
+
 
 export const Data = [
   {
@@ -21,7 +20,7 @@ export const Data = [
     "radius": "2,439.7 KM",
     "temperature": "430°c",
     "images": {
-      "planet": geologyearth,
+      "planet": "./assets/planet-mercury.svg",
       "internal": "./assets/planet-mercury-internal.svg",
       "geology": "./assets/geology-mercury.png"
     }
@@ -71,7 +70,7 @@ export const Data = [
     "images": {
       "planet": "./assets/planet-earth.svg",
       "internal": "./assets/planet-earth-internal.svg",
-      "geology": "./assets/geology-earth.svg"
+      "geology": "./assets/geology-earth.png"
     }
   },
   {
@@ -119,7 +118,7 @@ export const Data = [
     "images": {
       "planet": "./assets/planet-jupiter.svg",
       "internal": "./assets/planet-jupiter-internal.svg",
-      "geology": geologyjupiter
+      "geology": "./assets/geology-jupiter.png"
     }
   },
   {
