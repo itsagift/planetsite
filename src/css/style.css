@@ -7,7 +7,7 @@ body{
     font-family: 'Spartan';
     color: #fff;
     background-color: #070724;
-    background-image: url('/assets/background-stars.svg');
+    background-image: url('/public/assets/background-stars.svg');
 }
 header{
     display: flex;
