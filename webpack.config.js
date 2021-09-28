@@ -34,7 +34,7 @@ module.exports = {
         ],
       },
       {
-        test: /.svg(?v=\d+.\d+.\d+)?$/, 
+        test: /.svg/, 
         loader: "url-loader?limit=10000&mimetype=image/svg+xml"
       },
     ],
