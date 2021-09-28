@@ -1,13 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Spartan';
+}
 
-.nav{
+header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height:85px;
+    padding: 0 30px;
 }
-
-.navlinks{
+.header__title{
+    font-family: 'Antonio';
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+.header__links{
+    margin-left: auto;
     list-style: none;
     display: flex;
+    font-size: 11px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
-.navlinks li{
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) { 
+.main{
+        padding: 0 85px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+.main__image{
+    margin: auto;
+}
+.main__details{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 350px;
+}
+.detail__title{
+    font-size: 80px;
+    font-family: 'Antonio';
+    text-transform: uppercase;
+}
+.detail__desc{
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.details__input{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+.details__input input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.input__label{
+    padding: 10px 25px;
+    margin: 5px 0;
+    display: flex;
+
+    border: 1px solid #000;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+.label__no{
+    margin-right: 25px;
+}
+.image__spec{
+    position: relative;
+}
+.image__tooltip{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 160px;
+}
+
+}
+footer{
+    padding: 0 85px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+    width: 100%;
+    
+}
+.footer__links{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__link{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 20px 90px 20px 15px;
+}
+.link__title{
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    opacity: 0.5;
+}
+.link__stat{
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-family: 'Antonio';
+}
+.header__links li{
     margin: 0 5px;
 }

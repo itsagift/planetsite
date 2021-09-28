@@ -10,7 +10,8 @@ export default function Header({setPlanet}){
 
 return(
     <header>
-    <ul className="navlinks">
+    <div className="header__title">The Planets</div>
+    <ul className="header__links">
       {Data.map((card) => (
         <li
         onClick={() => handleOrangeClick(card)}
