@@ -14,6 +14,7 @@ return(
     <ul className="header__links">
       {Data.map((card) => (
         <li
+        className="header__link"
         onClick={() => handleOrangeClick(card)}
         key={card.name}>
           {card.name}

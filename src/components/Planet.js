@@ -33,26 +33,27 @@ export default function Planet({planet}){
                 <h2 className="detail__title">{planet.name}</h2>
                 <div className="detail__desc">{planet[detail].content}</div>
                 <div className="details__input">
+                    
+                    <input className="detail__input" type="radio" id="overview"
+                    name="detail" value="overview" checked={detail=== 'overview'} onChange={handleChange}/>
                     <label className="input__label" htmlFor="overview">
                         <div className="label__no">01</div>
                         <div className="label__title">Overview</div>
                     </label>
-                    <input type="radio" id="overview"
-                    name="detail" value="overview" checked={detail=== 'overview'} onChange={handleChange}/>
 
+                    <input className="detail__input" type="radio" id="structure"
+                    name="detail" value="structure" checked={detail=== 'structure'} onChange={handleChange} />
                     <label className="input__label" htmlFor="structure">
                         <div className="label__no">02</div>
                         <div className="label__title">Structure</div>
                     </label>
-                    <input type="radio" id="structure"
-                    name="detail" value="structure" checked={detail=== 'structure'} onChange={handleChange} />
 
+                    <input className="detail__input" type="radio" id="geology"
+                    name="detail" value="geology" checked={detail=== 'geology'} onChange={handleChange}/>
                     <label className="input__label" htmlFor="geology">
                         <div className="label__no">03</div>
                         <div className="label__title">Surface</div>
                     </label>
-                    <input type="radio" id="geology"
-                    name="detail" value="geology" checked={detail=== 'geology'} onChange={handleChange}/>
                     
                 </div>
             </div>
