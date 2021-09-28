@@ -1,4 +1,5 @@
-
+import geologyearth from "../public/assets/geology-earth.svg";
+import geologyjupiter from "/public/assets/geology-jupiter.svg";
 
 export const Data = [
   {
@@ -70,7 +71,7 @@ export const Data = [
     "images": {
       "planet": "./assets/planet-earth.svg",
       "internal": "./assets/planet-earth-internal.svg",
-      "geology": "./assets/geology-earth.png"
+      "geology": geologyearth
     }
   },
   {
