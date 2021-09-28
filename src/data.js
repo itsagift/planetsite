@@ -90,9 +90,9 @@ export const Data = [
     "radius": "3,389.5 KM",
     "temperature": "-28°c",
     "images": {
-      "planet": "./assets/planet-mars.svg",
-      "internal": "./assets/planet-mars-internal.svg",
-      "geology": "./assets/geology-mars.png"
+      "planet": "%PUBLIC_URL%/assets/planet-mercury.svg",
+      "internal": "/assets/planet-mars-internal.svg",
+      "geology": "/assets/geology-mars.png"
     }
   },
   {
