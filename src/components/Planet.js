@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 function MainImage({detail, planet}){
     if (detail == 'overview') {
         console.log(planet)        
-        return <img src={process.env.PUBLIC_URL + planet.images.planet}/>;   
+        return <img src={planet.images.planet}/>;   
           
     }
     else if (detail == 'structure'){

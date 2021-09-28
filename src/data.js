@@ -1,5 +1,3 @@
-
-
 export const Data = [
   {
     "name": "Mercury",
@@ -20,7 +18,7 @@ export const Data = [
     "radius": "2,439.7 KM",
     "temperature": "430°c",
     "images": {
-      "planet": "./assets/planet-mercury.svg",
+      "planet": "/assets/planet-mercury.svg",
       "internal": "./assets/planet-mercury-internal.svg",
       "geology": "./assets/geology-mercury.png"
     }
@@ -70,7 +68,7 @@ export const Data = [
     "images": {
       "planet": "./assets/planet-earth.svg",
       "internal": "./assets/planet-earth-internal.svg",
-      "geology": "./assets/geology-earth.svg",
+      "geology": "./assets/geology-earth.png"
     }
   },
   {
@@ -92,9 +90,9 @@ export const Data = [
     "radius": "3,389.5 KM",
     "temperature": "-28°c",
     "images": {
-      "planet": "%PUBLIC_URL%/assets/planet-mercury.svg",
-      "internal": "/assets/planet-mars-internal.svg",
-      "geology": "/assets/geology-mars.png"
+      "planet": "./assets/planet-mars.svg",
+      "internal": "./assets/planet-mars-internal.svg",
+      "geology": "./assets/geology-mars.png"
     }
   },
   {
@@ -188,9 +186,9 @@ export const Data = [
     "radius": "24,622 KM",
     "temperature": "-201°c",
     "images": {
-      "planet": "/assets/planet-neptune.svg",
-      "internal": "/assets/planet-neptune-internal.svg",
-      "geology": "/assets/geology-neptune.png"
+      "planet": "./assets/planet-neptune.svg",
+      "internal": "./assets/planet-neptune-internal.svg",
+      "geology": "./assets/geology-neptune.png"
     }
   }
 ]
