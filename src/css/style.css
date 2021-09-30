@@ -48,7 +48,6 @@ header{
     }
 
 .main{
-    padding: 0 85px;
     display:flex;
 }
 .main__details{
@@ -57,6 +56,7 @@ header{
 .details__input{
     display: flex;
     flex-direction: column;
+
 }
 .details__input input {
     opacity: 0;
@@ -77,6 +77,38 @@ header{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2.5px;
+}
+.detail__title{
+    font-size: 80px;
+    font-family: 'Antonio';
+    text-transform: uppercase;
+}
+    .detail__desc{
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+    }
+    .details__input{
+        margin-top:10px;
+    }
+.label__no{
+    margin-right: 25px;
+}
+.image__spec{
+    position: relative;
+}
+.image__tooltip{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 160px;
+}
+.footer__link{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (min-width: 1200px) { 
@@ -127,6 +159,7 @@ header{
     .main{
         flex-direction: row;
         justify-content: space-between;
+        padding: 0 85px;
     }
     .main__image{
         margin: auto;
@@ -137,32 +170,12 @@ header{
     width: 30%;
     min-width: 350px;
     }
-    .detail__title{
-    font-size: 80px;
-    font-family: 'Antonio';
-    text-transform: uppercase;
-}
-    .detail__desc{
-    font-size: 14px;
-    line-height: 25px;
-    margin-top: 20px;
+    footer{
+        padding: 0 85px;
     }
-    .details__input{
-        margin-top:10px;
+    .footer__link{
+        padding: 20px 90px 20px 15px;
     }
-.label__no{
-    margin-right: 25px;
-}
-.image__spec{
-    position: relative;
-}
-.image__tooltip{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 160px;
-}
 
 }
 
@@ -177,6 +190,7 @@ header{
     .main{
         justify-content: center;
         flex-direction: column;
+        padding: 0 40px;
     }
     .main__image{
         margin: 100px auto;
@@ -187,11 +201,21 @@ header{
     }
     
     .details__text{
-        width:40%;
+        padding-right: 10%;
+        width:65%;
+    }
+    .details__input{
+        flex: 1;
+    }
+    footer{
+        padding: 0 40px;
+    }
+    .footer__link{
+        
+        padding: 20px 40px 20px 15px;
     }
 }
 footer{
-    padding: 0 85px;
     margin-top: 100px;
     margin-bottom: 20px;
     
@@ -203,13 +227,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
-.footer__link{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 20px 90px 20px 15px;
-}
+
 .link__title{
     font-size: 11px;
     line-height: 25px;
