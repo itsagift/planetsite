@@ -29,11 +29,12 @@ export default function Planet({planet}){
             <div className="main__image">
                 <MainImage detail={detail} planet={planet}/>
             </div>
-            <div className="main__text">
+            <div className="main__details">
+                <div className="details__text">
                 <h2 className="detail__title">{planet.name}</h2>
                 <div className="detail__desc">{planet[detail].content}</div>
-            </div>
-            <div className="main__input">
+                </div>
+                <div className="details__input">
                     
                     <input className="detail__input" type="radio" id="overview"
                     name="detail" value="overview" checked={detail=== 'overview'} onChange={handleChange}/>
@@ -55,7 +56,11 @@ export default function Planet({planet}){
                         <div className="label__no">03</div>
                         <div className="label__title">Surface</div>
                     </label>
+                    
+                </div>
             </div>
-            </div>
+            
+            
+        </div>
     )
 }
