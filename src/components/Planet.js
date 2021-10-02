@@ -35,7 +35,6 @@ export default function Planet({planet}){
                 <div className="detail__desc">{planet[detail].content}</div>
                 </div>
                 <div className="details__input">
-                    
                     <input className="detail__input" type="radio" id="overview"
                     name="detail" value="overview" checked={detail=== 'overview'} onChange={handleChange}/>
                     <label className="input__label" htmlFor="overview">

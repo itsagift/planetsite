@@ -55,29 +55,13 @@ header{
 }
 .details__input{
     display: flex;
-    flex-direction: column;
-
 }
 .details__input input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-.detail__input:checked + .input__label{
-    background-color: #419EBB;
-}
-.input__label{
-    padding: 10px 25px;
-    margin: 5px 0;
-    display: flex;
 
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 12px;
-    line-height: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-}
 .detail__title{
     font-size: 80px;
     font-family: 'Antonio';
@@ -88,9 +72,7 @@ header{
     line-height: 25px;
     margin-top: 20px;
     }
-    .details__input{
-        margin-top:10px;
-    }
+    
 .label__no{
     margin-right: 25px;
 }
@@ -196,13 +178,35 @@ footer{
     width: 30%;
     min-width: 350px;
     }
+    .details__input{
+        margin-top:10px;
+        flex-direction: column;
+    }
     footer{
         padding: 0 85px;
     }
     .footer__link{
         padding: 20px 90px 20px 15px;
     }
-
+    
+    .detail__input:checked + .input__label{
+        background-color: #419EBB;
+    }
+    .input__label{
+        padding: 10px 25px;
+        margin: 5px 0;
+        display: flex;
+    
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+    }
+    .header__hamburger{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1200px) { 
@@ -232,17 +236,73 @@ footer{
     }
     .details__input{
         flex: 1;
-    }
+        
+            margin-top:10px;
+        }
+    
     footer{
         padding: 0 40px;
+    }
+    .footer__links{
+        flex-wrap: wrap;
     }
     .footer__link{
         
         padding: 20px 40px 20px 15px;
     }
+    .details__input{
+        flex-direction: column;
+    }
+    .detail__input:checked + .input__label{
+        background-color: #419EBB;
+    }
+    .input__label{
+        padding: 10px 25px;
+        margin: 5px 0;
+        display: flex;
+    
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+    }
+    .header__hamburger{
+        display: none;
+    }
 }
 @media screen and (max-width: 700px){
-    
+    header{
+        height: 68px;
+        padding: 0;
+    }
+    .header__links{
+        display: none;
+    }
+    .details__input{
+        width:100%;
+        position: fixed;
+        top: 68px;
+        left: 0;
+        
+        padding: 0 25px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .main{
+        margin-top: 100px;
+    }
+    .detail__input{
+        margin:0;
+        
+    }
+    .detail__input:checked + .input__label{
+        border-bottom: 1px solid #419EBB;
+    }
+    .input__label{
+        font-size: 9px;
+        text-transform: uppercase;
+    }
 }
 
 
