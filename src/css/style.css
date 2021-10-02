@@ -286,18 +286,16 @@ footer{
         top: 68px;
         left: 0;
         justify-content: space-evenly;
+        align-items: center;
         padding: 0 25px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
     .main{
         margin-top: 100px;
     }
-    .detail__input{
-        margin:0;
-        
-    }
     .detail__input:checked + .input__label{
-        border-bottom: 1px solid #419EBB;
+        border-bottom: 4px solid #419EBB;
+        
     }
     .input__label{
         font-size: 9px;
