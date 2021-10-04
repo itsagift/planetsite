@@ -3,58 +3,62 @@ import React, {useState} from 'react';
 function MainImage({detail, planet}){
     if (detail == 'overview') {
         console.log(planet)        
-        return <img src={planet.images.planet}/>;   
+        return <img className="planet__spec" src={planet.images.planet}/>;   
           
     }
     else if (detail == 'structure'){
-        return <img src={planet.images.internal}/>;
+        return <img className="planet__spec" src={planet.images.internal}/>;
     }
     else {
         return (
         <div className="image__spec">
-            <img src={planet.images.planet}/>
+            <img className="planet__spec" src={planet.images.planet}/>
             <img className="image__tooltip" src={planet.images.geology}/>
         </div>
         )
     }
 }
-export default function Planet({planet}){
+export default function Planet({planet, open}){
     const [detail, setDetail] = useState('overview');
     const handleChange=(e)=>{
         setDetail( e.target.value);
      }
  
     return(
-        <div className="main">
+        <div className={open ? "main active" : "main"}>
             <div className="main__image">
                 <MainImage detail={detail} planet={planet}/>
             </div>
             <div className="main__details">
                 <div className="details__text">
-                <h2 className="detail__title">{planet.name}</h2>
-                <div className="detail__desc">{planet[detail].content}</div>
+                <h2 className="text__title">{planet.name}</h2>
+                <div className="text__desc">{planet[detail].content}</div>
+                <div className="text__source">
+                    <div class="source__title">Source:</div> <a href={planet[detail].source} className="source__link"> Wikipedia</a>
+                    <img src= {require("assets/icon-source.svg")} className="source__img"/>
+                </div>
                 </div>
                 <div className="details__input">
-                    <div>
-                    <input className="detail__input" type="radio" id="overview"
+                    <div className="detail">
+                    <input className="detail--input" type="radio" id="overview"
                     name="detail" value="overview" checked={detail=== 'overview'} onChange={handleChange}/>
-                    <label className="input__label" htmlFor="overview">
+                    <label className={`input__label ${planet.name}`} htmlFor="overview">
                         <div className="label__no">01</div>
                         <div className="label__title">Overview</div>
                     </label>
                     </div>
-                    <div>
-                    <input className="detail__input" type="radio" id="structure"
+                    <div className="detail">
+                    <input className="detail--input" type="radio" id="structure"
                     name="detail" value="structure" checked={detail=== 'structure'} onChange={handleChange} />
-                    <label className="input__label" htmlFor="structure">
+                    <label className={`input__label ${planet.name}`} htmlFor="structure">
                         <div className="label__no">02</div>
                         <div className="label__title">Structure</div>
                     </label>
                     </div>
-                    <div>
-                    <input className="detail__input" type="radio" id="geology"
+                    <div className="detail">
+                    <input className="detail--input" type="radio" id="geology"
                     name="detail" value="geology" checked={detail=== 'geology'} onChange={handleChange}/>
-                    <label className="input__label" htmlFor="geology">
+                    <label className={`input__label ${planet.name}`} htmlFor="geology">
                         <div className="label__no">03</div>
                         <div className="label__title">Surface</div>
                     </label>
