@@ -212,12 +212,14 @@ footer{
         margin-top:10px;
         flex-direction: column;
     }
+    
     .detail--input:checked + .input__label{
         background-color: #419EBB;
     }
+    
     .input__label{
         padding: 10px 25px;
-        margin: 5px 0;
+        margin: 3px 0;
         display: flex;
     
         border: 1px solid rgba(255, 255, 255, 0.2);

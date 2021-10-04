@@ -34,7 +34,7 @@ return(
       ))}
     </ul>
     <div className={open ? "header__hamburger active" : "header__hamburger"} onClick={() => handleHamburgerClick()}>
-      <img src= {require("assets/icon-hamburger.svg")} />
+      <img src= {require("assets/icon-hamburger.svg")} alt="icon hamburger"/>
     </div>
     </header>
 )

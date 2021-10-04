@@ -3,17 +3,17 @@ import React, {useState} from 'react';
 function MainImage({detail, planet}){
     if (detail == 'overview') {
         console.log(planet)        
-        return <img className="planet__spec" src={planet.images.planet}/>;   
+        return <img className="planet__spec" src={planet.images.planet} alt="planet overview"/>;   
           
     }
     else if (detail == 'structure'){
-        return <img className="planet__spec" src={planet.images.internal}/>;
+        return <img className="planet__spec" src={planet.images.internal} alt="planet structure"/>;
     }
     else {
         return (
         <div className="image__spec">
-            <img className="planet__spec" src={planet.images.planet}/>
-            <img className="image__tooltip" src={planet.images.geology}/>
+            <img className="planet__spec" src={planet.images.planet} alt="planet overview"/>
+            <img className="image__tooltip" src={planet.images.geology} alt="planet zoom-in"/>
         </div>
         )
     }
@@ -25,7 +25,7 @@ export default function Planet({planet, open}){
      }
  
     return(
-        <div className={open ? "main active" : "main"}>
+        <div className={open ? "main active" : "main"} role="main">
             <div className="main__image">
                 <MainImage detail={detail} planet={planet}/>
             </div>
@@ -34,8 +34,8 @@ export default function Planet({planet, open}){
                 <h2 className="text__title">{planet.name}</h2>
                 <div className="text__desc">{planet[detail].content}</div>
                 <div className="text__source">
-                    <div class="source__title">Source:</div> <a href={planet[detail].source} className="source__link"> Wikipedia</a>
-                    <img src= {require("assets/icon-source.svg")} className="source__img"/>
+                    <div className="source__title">Source:</div> <a href={planet[detail].source} className="source__link"> Wikipedia</a>
+                    <img src= {require("assets/icon-source.svg")} className="source__img" alt="source icon"/>
                 </div>
                 </div>
                 <div className="details__input">
