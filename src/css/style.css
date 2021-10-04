@@ -184,6 +184,7 @@ footer{
     
     
     .main{
+        margin-top:100px;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 85px;
