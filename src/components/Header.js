@@ -22,7 +22,7 @@ export default function Header({setPlanet}){
 
 return(
     <header>
-    <div className="header__title">The Planets</div>
+    <h1 className="header__title">The Planets</h1>
     <ul className={open ? "header__links active" : "header__links"}>
       {Data.map((card) => (
         <li
