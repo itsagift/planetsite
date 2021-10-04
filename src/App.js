@@ -5,8 +5,8 @@ import Planet from './components/Planet';
 import Footer from './components/Footer';
 
 export default function App() {
-  const mercury = Data[0]
-  const [planet, setPlanet] = useState(mercury);
+  const earth = Data[2]
+  const [planet, setPlanet] = useState(earth);
 
   return (
   <div className="content">
