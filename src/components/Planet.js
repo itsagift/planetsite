@@ -43,24 +43,24 @@ export default function Planet({planet, open}){
                     <input className="detail--input" type="radio" id="overview"
                     name="detail" value="overview" checked={detail=== 'overview'} onChange={handleChange}/>
                     <label className={`input__label ${planet.name}`} htmlFor="overview">
-                        <div className="label__no">01</div>
-                        <div className="label__title">Overview</div>
+                        <span className="label__no">01</span>
+                        <span className="label__title">Overview</span>
                     </label>
                     </div>
                     <div className="detail">
                     <input className="detail--input" type="radio" id="structure"
                     name="detail" value="structure" checked={detail=== 'structure'} onChange={handleChange} />
                     <label className={`input__label ${planet.name}`} htmlFor="structure">
-                        <div className="label__no">02</div>
-                        <div className="label__title">Structure</div>
+                        <span className="label__no">02</span>
+                        <span className="label__title">Structure</span>
                     </label>
                     </div>
                     <div className="detail">
                     <input className="detail--input" type="radio" id="geology"
                     name="detail" value="geology" checked={detail=== 'geology'} onChange={handleChange}/>
                     <label className={`input__label ${planet.name}`} htmlFor="geology">
-                        <div className="label__no">03</div>
-                        <div className="label__title">Surface</div>
+                        <span className="label__no">03</span>
+                        <span className="label__title">Surface</span>
                     </label>
                     </div>
                 </div>
